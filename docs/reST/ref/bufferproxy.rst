@@ -108,6 +108,6 @@
       contiguous, otherwise a ValueError is raised. Argument `buffer` is a
       ``str``/``bytes`` object. An optional offset gives a
       start position, in bytes, within the buffer where overwriting begins.
-      If the offset is negative or greater that or equal to the buffer proxy's
+      If the offset is negative or greater than or equal to the buffer proxy's
       :attr:`length` value, an ``IndexException`` is raised.
       If ``len(buffer) > proxy.length + offset``, a ``ValueError`` is raised.
