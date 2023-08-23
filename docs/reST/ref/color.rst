@@ -198,7 +198,7 @@
    .. method:: correct_gamma
 
       | :sl:`Applies a certain gamma value to the Color.`
-      | :sg:`correct_gamma (gamma) -> Color`
+      | :sg:`correct_gamma(gamma) -> Color`
 
       Applies a certain gamma value to the Color and returns a new Color with
       the adjusted ``RGBA`` values.
@@ -228,10 +228,10 @@
 
    .. method:: grayscale
 
-      | :sl:`returns the grayscale of a Color`
+      | :sl:`Returns the grayscale of a Color`
       | :sg:`grayscale() -> Color`
 
-      Returns a Color which represents the grayscaled version of self using the luminosity formula which weights red, green and blue according to their wavelengths..
+      Returns a Color which represents the grayscaled version of self using the luminosity formula which weights red, green and blue according to their wavelengths.
 
       .. ## Color.grayscale ##
 
@@ -243,8 +243,8 @@
       Returns a Color which is a linear interpolation between self and the
       given Color in RGBA space. The second parameter determines how far
       between self and other the result is going to be.
-      It must be a value between 0 and 1 where 0 means self and 1 means
-      other will be returned.
+      It must be a value between 0 and 1, 
+      where 0 corresponds to 'self' and 1 corresponds to 'other'.
 
       .. versionadded:: 2.0.1
 
@@ -255,7 +255,7 @@
       | :sl:`returns a Color where the r,g,b components have been multiplied by the alpha.`
       | :sg:`premul_alpha() -> Color`
 
-      Returns a new Color where each of the red, green and blue colour
+      Returns a new Color where each of the red, green and blue color
       channels have been multiplied by the alpha channel of the original
       color. The alpha channel remains unchanged.
 
